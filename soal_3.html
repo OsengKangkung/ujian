@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+
+		
+		function isNumeric(number) {
+			
+
+			//membuat array dan simpan number ke array
+			let params = new Array(number.length);
+			for(let i = 0; i < params.length; ++i) {
+		        params[i] = number[i];
+		    }
+
+
+		    //array(params) ke integer
+		    var result = params.map(function (x) { 
+			  return parseInt(x, 10); 
+			});
+
+		    //menghapus elemen NaN
+		    let filterResult =result.filter(function(val){
+		    	return !Number.isNaN(val);
+		    });
+
+		    //sorting array
+		    filterResult.sort();
+		    
+		    //print array 
+		 	filterResult.forEach( function(element) {
+		 		console.log(element);
+		 	});
+		}
+
+
+
+
+		isNumeric('3476asdf')
+	</script>
+</body>
+</html>
