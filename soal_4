@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		
+		function thirdHighest(parameter){
+
+			
+			if(typeof(parameter) === 'object') {
+				if(parameter.length >= 3) {
+				let filterResult = parameter.filter(function(val){
+		    		return !isNaN(val);
+		   		 });
+				 
+				console.log(filterResult[3]);
+
+				}else{
+					console.log('Minimal array length is 3!');
+				}
+			}else {
+				console.log('Parameter should be an array!');
+			}
+		}
+
+		thirdHighest([1,2,3,4,5,'a']);
+	</script>
+	
+</body>
+</html>
