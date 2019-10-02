@@ -1,5 +1,5 @@
 <?php
-	<?php
+	
     function biodata() {
 
         
@@ -34,5 +34,5 @@
 
 
     biodata();
-?>
+
 ?>
