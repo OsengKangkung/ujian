@@ -2,7 +2,7 @@
 	<?php
     function biodata() {
 
-        $name = 'alwan'; $age= 21;
+        
 
         $biodata = [
             'name' => 'alwan',
